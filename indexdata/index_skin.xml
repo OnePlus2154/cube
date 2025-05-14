@@ -2,6 +2,34 @@
 <krpano version="1.17">
 
     
+  <!-- Spot Style - Open website -->
+  <style name="IconOpenwebsite"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint4.png"
+         visible="false"
+
+         frame="0"
+         lastframe="17"
+         framewidth="40"
+         frameheight="40"
+         stopspotsequence="false"
+         onloaded="setdefaultanimatedspotframe();startspotanimation(0.1);"
+
+         onhover="onhoverIconOpenwebsite"
+         onout="onoutIconOpenwebsite"
+         height="100"
+         width="100"
+         />
+  <action name="onhoverIconOpenwebsite">
+    showtooltip(hotspot);
+  </action>
+  <action name="onoutIconOpenwebsite">
+    hideTooltip();
+
+
+
+  </action>
+
+    
   <!-- Spot Style - Load panorama -->
   <style name="IconLoadpanorama"
          url="%FIRSTXML%/spots/hotspot_neutral_sequence_user_defaultpoint5.png"
